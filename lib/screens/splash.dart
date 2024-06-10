@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:third_eye/constants.dart';
+import 'package:third_eye/screens/get_started.dart';
 import 'package:third_eye/screens/login.dart';
 
 class Splash extends StatefulWidget {
@@ -13,15 +14,24 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
 
   final obj = Constants();
+  bool alreadyLoggedIn = false;
 
   @override
   void initState() {
     super.initState();
-    navigateToLoginPage();
+    alreadyLoggedIn ? navigateToLoginPage() : navigateToGetStartedPage();
+  }
+
+  navigateToGetStartedPage() async {
+    await Future.delayed(const Duration(seconds: 5));
+
+    Navigator.pushReplacement(context, MaterialPageRoute(
+      builder: (context) => const GetStarted() // Navigate to get started page
+    ));
   }
 
   navigateToLoginPage() async {
-    await Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 5));
 
     Navigator.pushReplacement(context, MaterialPageRoute(
       builder: (context) => const Login() // Navigate to login page
