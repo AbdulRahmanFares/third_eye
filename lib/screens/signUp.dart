@@ -2,17 +2,17 @@ import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:third_eye/constants.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class SignUp extends StatefulWidget {
+  const SignUp({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _HomeState extends State<Home> {
+class _SignUpState extends State<SignUp> {
 
   final obj = Constants();
-  
+
   @override
   Widget build(BuildContext context) {
     return ColorfulSafeArea(

@@ -57,7 +57,7 @@ class _SplashState extends State<Splash> {
                 Container(
                   height: screenHeight * 0.05,
                   width: screenWidth * 0.28,
-                  color: obj.greenShade
+                  color: obj.blueShade
                 ),
                 Text(
                   " THIRD",
@@ -91,7 +91,7 @@ class _SplashState extends State<Splash> {
                 Container(
                   height: screenHeight * 0.05,
                   width: screenWidth * 0.28,
-                  color: obj.greenShade
+                  color: obj.redShade
                 )
               ]
             )
