@@ -24,9 +24,9 @@ class _LoginState extends State<Login> {
     final screenWidth = MediaQuery.of(context).size.width;
 
     return ColorfulSafeArea(
-      color: obj.blueShade,
+      color: obj.redShade,
       child: Scaffold(
-        backgroundColor: obj.redShade,
+        backgroundColor: Colors.white,
         body: Stack(
           children: [
             Column(
@@ -36,7 +36,7 @@ class _LoginState extends State<Login> {
                   child: Container(
                     height: screenHeight * 0.6,
                     width: screenWidth,
-                    color: obj.blueShade
+                    color: obj.redShade
                   )
                 )
               ]
@@ -48,7 +48,7 @@ class _LoginState extends State<Login> {
                 height: screenHeight * 0.7,
                 width: screenWidth * 0.9,
                 decoration: BoxDecoration(
-                  color: obj.greyShade,
+                  color: Colors.white,
                   border: Border.all(
                     color: obj.redShade,
                     width: screenWidth * 0.003
@@ -63,7 +63,7 @@ class _LoginState extends State<Login> {
                       style: GoogleFonts.poppins(
                         fontSize: screenWidth * 0.1,
                         fontWeight: FontWeight.bold,
-                        color: obj.blueShade,
+                        color: obj.blackShade,
                         letterSpacing: 2
                       )
                     ),
@@ -80,7 +80,7 @@ class _LoginState extends State<Login> {
                       height: screenHeight * 0.07,
                       width: screenWidth * 0.8,
                       decoration: BoxDecoration(
-                        color: obj.greyShade,
+                        color: Colors.white,
                         border: Border.all(
                           color: obj.blackShade
                         ),
@@ -105,7 +105,7 @@ class _LoginState extends State<Login> {
                       height: screenHeight * 0.07,
                       width: screenWidth * 0.8,
                       decoration: BoxDecoration(
-                        color: obj.greyShade,
+                        color: Colors.white,
                         border: Border.all(
                           color: obj.blackShade
                         ),
@@ -134,7 +134,7 @@ class _LoginState extends State<Login> {
                         "Login",
                         style: GoogleFonts.poppins(
                           fontSize: screenWidth * 0.04,
-                          color: obj.greyShade,
+                          color: Colors.white,
                           letterSpacing: 1
                         )
                       )
